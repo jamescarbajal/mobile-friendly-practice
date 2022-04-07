@@ -5,25 +5,25 @@
 body{
     background-color: #fff;
 }
-.wave-div{
-    position: absolute;
-    top: 0;
-    height: 90%;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #fff;
-}
-#waves{
-    width: 100%;
-    color: linear-gradient(to bottom(rgba(teal,black,0.5)));
-}
-h1{
+.top-header{
+    z-index: 1;
     position: absolute;
     font-size: 45px;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     color: #fff;
+}
+.wavy-div{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* box-sizing: border-box; */
+    background-color: #fff;
+}
+#waves{
+    height: 40%;
+    color: linear-gradient(to bottom(rgba(teal,black,0.5)));
 }
 main{
     position: absolute;
@@ -42,4 +42,18 @@ h2{
 }
 .section-2{
     text-align: right;
+}
+@media only screen and (max-width: 900px){
+    .top-header{
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, 0);
+    }
+    main{
+        position: absolute;
+        width: 100%;
+        top: 22%;
+    }
 }
